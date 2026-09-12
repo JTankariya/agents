@@ -1,0 +1,19 @@
+[project]
+name = "agentic-data-analyst-playground"
+version = "0.1.0"
+description = "A privacy-conscious Groq-powered Streamlit data analyst portfolio app"
+requires-python = ">=3.11,<3.14"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+exclude = [".venv"]
+
+[tool.ruff.lint]
+select = ["E", "F"]
+ignore = ["E501"]

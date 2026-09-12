@@ -1,0 +1,1 @@
+"""Data analyst Streamlit application."""

@@ -1,0 +1,30 @@
+# Secrets
+.streamlit/secrets.toml
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Streamlit analytics local files
+streamlit_analytics.json
+
+# IDE / OS
+.DS_Store
+.idea/
+.vscode/
+
+# Build artifacts
+build/
+dist/
+coverage.xml
+htmlcov/
+docs/
