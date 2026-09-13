@@ -297,14 +297,12 @@ def main() -> None:
 
     if uploaded_file is None:
         st.info("Upload a CSV to activate the analyst.")
-        _render_contact_form(formspree_form_id)
         return
 
     try:
         _load_uploaded_file(uploaded_file, settings)
     except DatasetError as exc:
         st.error(str(exc))
-        _render_contact_form(formspree_form_id)
         return
 
     load_result: CsvLoadResult = st.session_state.load_result
